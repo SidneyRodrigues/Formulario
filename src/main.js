@@ -1,4 +1,4 @@
-document.getElementById('my-form').addEventListener('submit', function(funcao){
+document.getElementById('form-calcular').addEventListener('submit', function (funcao) {
   funcao.preventDefault();
 
   const campoA = parseFloat(document.getElementById('campoA').value);
@@ -10,7 +10,7 @@ document.getElementById('my-form').addEventListener('submit', function(funcao){
     resultados.innerHTML = 'Resultado válido: Campo B é maior que Campo A.'
     resultados.className = 'text correto'
   } else {
-    resultados.innerHTML = 'Formulário inválido: Campo B deve ser maior que Campo A.';
+    resultados.innerHTML = 'Resultado inválido: Campo B deve ser maior que Campo A.';
     resultados.className = 'text incorreto';
-}
+  }
 });
